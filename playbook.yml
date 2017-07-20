@@ -11,7 +11,7 @@
   roles:
     - postgresql
 
-- hosts: testserver
+- hosts: testservers
   remote_user: vagrant
   become: yes
   roles:
