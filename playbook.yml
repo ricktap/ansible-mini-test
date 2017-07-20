@@ -1,16 +1,19 @@
 ---
 - hosts: webservers
   remote_user: vagrant
+  become: yes
   roles:
     - apache
 
 - hosts: dbservers
   remote_user: vagrant
+  become: yes
   roles:
     - mysql
 
 - hosts: testserver
   remote_user: vagrant
+  become: yes
   roles:
     - apache
     - mysql
