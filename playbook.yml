@@ -1,19 +1,16 @@
 ---
-- hosts: webservers
+- hosts: 
+    - webservers
+    - testservers
   remote_user: vagrant
   become: yes
   roles:
     - apache
 
-- hosts: dbservers
+- hosts: 
+    - dbservers
+    - testservers
   remote_user: vagrant
   become: yes
   roles:
-    - postgresql
-
-- hosts: testservers
-  remote_user: vagrant
-  become: yes
-  roles:
-    - apache
     - postgresql
