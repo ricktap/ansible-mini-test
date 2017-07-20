@@ -1,6 +1,0 @@
----
-- name: install mysql
-  yum:
-    name: mysql
-    state: latest
-  notify: restart mysql

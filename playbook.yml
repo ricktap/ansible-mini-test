@@ -9,11 +9,11 @@
   remote_user: vagrant
   become: yes
   roles:
-    - mysql
+    - postgresql
 
 - hosts: testserver
   remote_user: vagrant
   become: yes
   roles:
     - apache
-    - mysql
+    - postgresql
