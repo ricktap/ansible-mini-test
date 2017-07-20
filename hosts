@@ -1,7 +1,7 @@
 [servers]
-web ansible_ssh_host=10.10.0.102
-db ansible_ssh_host=10.10.0.103
-test ansible_ssh_host=10.10.0.104
+web
+db
+test
 
 [webservers]
 web
