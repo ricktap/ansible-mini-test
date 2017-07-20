@@ -5,9 +5,11 @@ test
 
 [webservers]
 web
+test
 
 [dbservers]
 db
+test
 
 [testservers]
 test
